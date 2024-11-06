@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #102939;
+}
+
+.headerBox{
+  padding: 15px;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.veiculo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.veiculo img{
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.informacoes{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.alertas{
+  background-color: #142e52;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.alerta {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: slide-left 5s linear infinite
+}
+
+.tituloAlerta{
+  font-weight: bold;
+}
+
+.iconInfo{
+  color: rgb(88, 179, 253);
+}
+
+.infoBoxTxt{
+  color: white;
+  font-weight: bolder;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.informacoesBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slide-left {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.alertas:hover {
+  animation-play-state: paused; /* Pausa o movimento ao passar o mouse */
+}
